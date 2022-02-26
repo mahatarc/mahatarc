@@ -12,7 +12,7 @@ on:
       - main
   schedule:
       # every 30 minutes
-    - cron: "*/30 * * * *"
+    - cron: "*/0 12 30 12"
 
 # This command allows us to run the Action automatically from the Actions tab.
   workflow_dispatch:
@@ -42,7 +42,7 @@ jobs:
     # Adds and commits the files
       - name: Commit files
         run: |
-          git config --local user.email "archanamahat7@gmail.com"
+          git config --local user.email "archanamahat252@gmail.com"
           git config --local user.name "mahatarc"
           git status
           git add .
